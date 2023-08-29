@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <title>Servicio de Clima</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="left-info">
+            <div class="pic-gradient"></div>
+            <div class="today-info">
+                <h2>miercoles</h2>
+                <span>23 de agosto</span>
+                <div>
+                    <i class='bx bx-current-location'></i>
+                    <span>San Luis, AR</span>
+                </div>
+                <div class="today-weather">
+                    <i class='bx bx-sun'></i>
+                    <h1 class="weather-temp">
+                        
+                    </h1>
+                    <h3></h3>
+                </div>
+            </div>
+    
+            <div class="right-info">
+                <div class="day-info">
+                    <div>
+                        <span class="title">PRECIPITACION</span>
+                        <span class="value">4 %</span>
+                    </div>
+                    <div>
+                        <span class="title">HUMEDAD</span>
+                        <span class="value">34 %</span>
+                    </div>
+                    <div>
+                        <span class="title">VELOCIDAD DEL VIENTO</span>
+                        <span class="value">6 km/h</span>
+                    </div>
+                </div>
+    
+                <ul class="days-list">
+                    <li>
+                        <i class='bx bx-cloud'></i>
+                        <span>sabado</span>
+                        <span class="day-temp">23°C</span>
+                    </li>
+                    <li>
+                        <i class='bx bx-sun'></i>
+                        <span>domingo</span>
+                        <span class="day-temp">28°C</span>
+                    </li>
+                    <li>
+                        <i class='bx bx-cloud-rain'></i>
+                        <span>lunes</span>
+                        <span class="day-temp">02°C</span>
+                    </li>
+                    <li>
+                        <i class='bx bx-cloud-drizzle'></i>
+                        <span>martes</span>
+                        <span class="day-temp">14°C</span>
+                    </li>
+                </ul>
+                <div class="btn-container">
+                    <form id="location-form">
+                        <input type="text" id="location-input" placeholder="Ingresa tu ubicación">
+                        <button type="submit" class="loc-button">Buscar ubicación</button>
+                    </form>
+                    <p>Última ubicación buscada: <span id="lastLocation"></span></p>
+                </div>
+                
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+    <script src="main.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+
+</html>
